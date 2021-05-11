@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.aynur.springboot.cruddemo.dao.EmployeeDao;
 import ru.aynur.springboot.cruddemo.entity.Employee;
 import ru.aynur.springboot.cruddemo.services.EmployeeService;
 
