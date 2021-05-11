@@ -1,5 +1,6 @@
 package ru.aynur.springboot.cruddemo.services;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.aynur.springboot.cruddemo.dao.EmployeeDao;
@@ -12,7 +13,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeDao employeeDao;
 
-    public EmployeeServiceImpl(EmployeeDao employeeDao) {
+    public EmployeeServiceImpl(@Qualifier("employeeDaoJpaImpl") EmployeeDao employeeDao) {
         this.employeeDao = employeeDao;
     }
 
